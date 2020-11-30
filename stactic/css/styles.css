@@ -148,7 +148,6 @@
   padding: 3em 0;
 }
 .download {
-  border: 1px solid #00f;
   text-align: center;
   padding: 3em 0;
 }
@@ -175,6 +174,54 @@
 .download-item .u-h3 {
   margin-bottom: 0.5rem;
   margin-top: 1.5em;
+}
+.carousel {
+  text-align: left;
+  margin: 2em 0;
+}
+.carousel-content[open] .carousel-header {
+  border: none;
+}
+.carousel-content[open] .carousel-header::-webkit-details-marker {
+  color: var(--SoftRed);
+}
+.carousel-header {
+  padding: 1em 0;
+  border-bottom: 1px solid #ccd1d1;
+  font-size: 0.9em;
+}
+.carousel-header:focus {
+  outline: 0;
+}
+.carousel-header::-webkit-details-marker {
+  color: var(--SoftBlue);
+  float: right;
+}
+.carousel {
+  text-align: left;
+  margin: 2em 0;
+}
+.carousel-content[open] .carousel-header {
+  border: none;
+}
+.carousel-content[open] .carousel-header::-webkit-details-marker {
+  color: var(--SoftRed);
+}
+.carousel-header {
+  padding: 1em 0;
+  border-bottom: 1px solid #ccd1d1;
+  font-size: 0.9em;
+}
+.carousel-header:focus {
+  outline: 0;
+}
+.carousel-header::-webkit-details-marker {
+  color: var(--SoftBlue);
+  float: right;
+}
+.questions {
+  padding: 4em 0;
+  text-align: center;
 }
 :root {
   --SoftBlue: #5368df;
