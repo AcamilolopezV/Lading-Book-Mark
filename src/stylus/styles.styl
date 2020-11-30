@@ -1,5 +1,6 @@
 @import './header.styl'
 @import './hero.styl'
+@import './features.styl'
 
 :root
   --SoftBlue: hsl(231,69%,60%)
@@ -8,13 +9,47 @@
   --VeryDarkBlue: hsl(229, 31%,21%)
 
 body
-  background: lightgray
+  // background: lightgray
   font-family: 'Rubik', sans-serif
   color: var(--VeryDarkBlue)
   margin: 0
   font-size 18px
 
+ul
+  padding 0
+  list-style none
+  margin 0
+
 .u-wrapper
   max-width 1280px
   margin auto
   padding 0 1em
+
+.u-h1
+  font-size 2em
+  font-weight 500
+
+.u-h2
+  @extends .u-h1
+
+.u-p
+  color var(--GrayishBlue)
+  line-height 1.7
+  font-size 0.9em
+
+.u-button
+  background: var(--SoftBlue)
+  color: white
+  padding 1em .5em
+  font-size .9em
+  font-weight bold
+  border-radius: .5em
+  border none 
+  margin-left 0.5em
+  box-shadow: 0 7px 10px -4px var(--SoftBlue)
+  cursor pointer
+  &:first-of-type
+    margin 0
+  &.is-gray
+    color: var(--VeryDarkBlue)
+    background: #f2f2f2
