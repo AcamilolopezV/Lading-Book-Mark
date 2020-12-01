@@ -5,6 +5,7 @@
     border-bottom 1px solid var(--GrayishBlue)
   &-content
     display: none
+    flex-direction: column
     img
       max-width 100%
       margin-bottom 1.5em
@@ -30,15 +31,35 @@
     & ~ ul [for="bookmarking"]:after
       display block
     & ~ .tabs-grid #tab-bookmarking
-      display block
+      display flex
   input[id="searching"]:checked
     & ~ ul [for="searching"]:after
       display: block
     & ~ .tabs-grid #tab-searching
-      display block
+      display flex
   input[id="sharing"]:checked
     & ~ ul [for="sharing"]:after
       display: block
     & ~ .tabs-grid #tab-sharing
-      display block
+      display flex
+  
+  @media screen and (min-width: 1024px)
+    border-top: none
+    text-align left
+    ul
+      display flex
+      justify-content center
+    label
+      padding 2em 3em
+      &:after
+        width 100%
+        transform: translateX(0)
+    img
+      margin-right 5em
+      margin-bottom 0
+    &-content
+      flex-direction: row
+      align-items center
+
+
 

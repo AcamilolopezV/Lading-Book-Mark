@@ -7,6 +7,8 @@
     text-transform uppercase
     letter-spacing 4px
 .form
+  max-width 500px
+  margin auto
   .u-button
     margin 0
   &-input
@@ -20,3 +22,11 @@
     outline: 0
     &::-webkit-input-placeholder
       color #CCD1D1
+  @media screen and (min-width 1024px)
+    display flex
+    &-input
+      flex-shrink: 0
+      width 70%
+      margin-right 1em
+      margin-bottom: 0
+      

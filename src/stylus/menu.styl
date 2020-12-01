@@ -50,5 +50,28 @@
           transform: translateY(0)
           visibility: visible
           opacity 1
+  @media screen and (min-width: 1024px)
+    transform: translateY(0)
+    visibility: visible
+    opacity 1
+    position initial
+    height auto
+    background: initial
+    a
+      color var(--VeryDarkBlue)
+    li
+      border none
+      &:last-child
+        a
+          border none 
+          margin-top 0
+          padding 0.7em 2em
+          background: var(--SoftRed)
+          color white
+          margin-left 2em
+    ul
+      display flex
+    &-open
+      display none
 
   
